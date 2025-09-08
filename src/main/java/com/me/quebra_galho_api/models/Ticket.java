@@ -3,6 +3,7 @@ package com.me.quebra_galho_api.models;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import com.me.quebra_galho_api.enums.Especialization;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -32,7 +33,7 @@ public class Ticket {
     private Long id;
 
     @Column(nullable=false)
-    private String type;
+    private Especialization type;
 
     @Timestamp
     private LocalDate createdAt;

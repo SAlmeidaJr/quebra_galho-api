@@ -49,7 +49,7 @@ public class Requester {
 
     @Column(precision= 3, scale= 0)
     @ValidRating
-    private byte rating;
+    private short numericalRating;
     
     @JsonProperty(access= JsonProperty.Access.WRITE_ONLY)
     @OneToMany(mappedBy="requester", fetch= FetchType.LAZY)
